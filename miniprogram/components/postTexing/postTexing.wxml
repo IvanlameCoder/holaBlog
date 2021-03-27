@@ -1,0 +1,30 @@
+<!-- components/postTexing/postTexing.wxml
+<text>components/postTexing/postTexing.wxml</text> -->
+<!-- 发帖输入框 -->
+<view class="postInputBox">
+  <textarea bindinput="texing"  fixed="true" name="" focus='{true}' id=""  show-confirm-bar="true" auto-focus="true" hold-keyboard="false" bindblur="blurArea" placeholder="写点什么吧" maxlength="200" class="postingArea" cols="60" rows="50" value="{{postContent}}"></textarea>
+  <view class="tagsBox">
+  <checkbox-group bindchange="cbChange">
+    标签：
+  <checkbox value="生活" clsss="tags_life">生活</checkbox>
+  <checkbox value="影视" clsss="tags_life">影视</checkbox>
+  <checkbox value="音乐" clsss="tags_life">音乐</checkbox>
+  </checkbox-group>
+  </view>
+<view class="postPic">
+<image wx:for="{{postPicUrl}}" mode="aspectFill" lazy-load="true" data-src="{{item}}" src="{{item}}" bindtap="imgPreview" wx:key="id" ></image>
+<view class="viedeoUploadBox">
+  <video style="{{flag}}" class="viedeoUpload" page-gesture="true" show-center-play-btn="true" autoplay="false" src="{{previewVideoSrc}}" loop="false" controls="true" ></video>
+</view>
+<button class="upLoadPic" style="width:auto;color:white" bindtap="upLoadPic"  plain="true" >
+<image src="../../pages/images_Pub/pic.png"></image>
+</button>
+<button plain="true" style="width:auto" class="upLoadVideo" bindtap="upLoadVideo">
+  <image src="../../pages/images_Pub/video.png"></image>
+</button>
+<button type="default" bindtap="confirm" style="margin-bottom:15rpx;" >发表</button>
+<button type="default" bindtap="cancelAll" style="width:auto,height:auto;">取消</button>
+<view class="wordsCount"><view class="currentWords" style="{{maxWords}}">{{wordsCount}}</view>/200</view>
+</view>
+
+</view>

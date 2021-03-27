@@ -1,0 +1,41 @@
+<!-- pages/index/index.wxml
+<text>pages/index/index.wxml</text> -->
+<view class="container">
+<view class="postBox" bindlongpress="delete" wx:for="{{postArr}}" wx:key="{{item._id}}">
+
+<view class="mainBox"  >
+  <view class="seal">
+<image class="userAvatar" mode="aspectFit" src="{{item.userAvatar}}"></image>
+<view class="userNickName">
+  {{item.nickName}}
+  <view class="creatTime_post">
+    2021-03-17
+  </view>
+</view>
+</view>
+<view class="postPic">
+<image wx:for="{{item.picArr}}" bindload="imgLoad" mode="aspectFill" lazy-load="true" data-index="{{index}}" data-src="{{item}}" src="{{item}}" bindtap="imgPreview" ></image>
+<video src="{{item.videoTempPath}}" wx:if="{{false}}" controls="true" autoplay="false" show-center-play-btn="true" show-mute-btn="true"></video>
+</view>
+<view class="content">
+  {{item.postContent}}
+</view>
+<view class="tags">{{item.tags}}</view>
+<view class="commentAndlike">
+  <image class="commentImg" data-index="{{index}}"  bindtap="commentFunc" src="../images_Pub/comment.png"></image>
+  <image class="likeThumb"  bindtap="likedHits" data-index="{{index}}" data-id="{{item._id}}"  src="../images_Pub/liked.png" ></image>
+</view>
+<view class="likedCount">{{item.likeCount}}</view>
+<view class="commentBox" wx:if="{{index===currentIndex?true:false}}">
+  <textarea name="" placeholder="评论一下吧"  autoHeight="true"  class="commentPart" id="" cols="30" rows="10"></textarea>
+  <image class="send" src="../images_Pub/send.png"></image>
+</view>
+</view>
+</view>
+<!-- 使用自定义组件发表按钮 -->
+<btnPost bindtap="postFewThings"></btnPost>
+<btnCancel style="{{flag}}" bindtap="closeThePage"></btnCancel>
+<!-- <button bindtap="getData">获取数据</button> -->
+<view  class="shade" style="{{flag}}"></view>
+<postTexing bindinput="texing"  style="{{flag}}"></postTexing>
+</view>

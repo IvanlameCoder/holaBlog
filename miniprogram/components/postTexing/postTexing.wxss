@@ -1,0 +1,120 @@
+/* components/postTexing/postTexing.wxss */
+/* 装textarea的容器 */
+.postInputBox{
+  position: fixed;
+  /* right: 50%; */
+  /* top: 50%;
+  left: 50%;
+  position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  /* border:1rpx solid red; */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding:50rpx 0rpx 0rpx 0rpx;
+  flex-wrap: wrap;
+ 
+}
+/* 输入区域 */
+.postingArea{
+  width: 600rpx;
+  height: 270rpx;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10rpx;
+  margin: 0rpx 0rpx 220rpx 0rpx;
+  box-sizing: border-box;
+  padding: 10rpx 30rpx;
+}
+/* 确定按钮 */
+/* 标签容器 */
+.tagsBox{
+  position: absolute;
+  top:26%;
+  color: whitesmoke;
+  margin: 15rpx 0rpx;
+  font-size: 25rpx;
+}
+.tagsBox checkbox{
+  /* width: 20rpx;
+  height: 20rpx; */
+  margin: 5rpx 6rpx;
+}
+/* 贴图 */
+.postPic{
+  margin:-250rpx 0rpx 0rpx 0rpx;
+  height: auto;
+  width: 550rpx;
+  /* position: absolute; */
+  /* border: 1rpx solid red; */
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  display: inline-block;
+  /* margin-left: 30rpx; */
+  /* border:1rpx solid red; */
+  padding: 20rpx 0rpx 0rpx 55rpx;
+}
+/* .btnConfirm{
+  width: 20rpx;
+  height: 20rpx;
+  margin: 0 auto;
+} */
+.postPic image{
+ width: 160rpx;
+ height: 160rpx;
+ margin: 6rpx 6rpx;
+}
+/* .postPic image::after{
+  content:"取消" ;
+  font-size: 20rpx;
+} */
+
+button{
+  /* background-color: whitesmoke; */
+  font-size: 22rpx;
+}
+.upLoadPic[plain],.upLoadVideo[plain] {
+  border: 0;
+  padding: 0;
+  margin: 0;
+} 
+.upLoadPic{
+  position: absolute;
+  left: 19%;
+  top:32%;
+}
+.upLoadPic image,.upLoadVideo image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.upLoadVideo{
+  position: absolute;
+  left: 29%;
+  top:32%;
+}
+.wordsCount{
+  position: absolute;
+  top:25%;
+  right: 11%;
+  font-size: 22rpx;
+  color:#8d91d6;
+}
+.currentWords{
+  display: inline-block;
+}
+.viedeoUploadBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0rpx 80rpx 0rpx 0rpx;
+}
+/* .viedeoUploadBox::after{
+  content:"关闭";
+  width: 40rpx;
+  height: 40rpx;
+  background-color: tomato;
+} */

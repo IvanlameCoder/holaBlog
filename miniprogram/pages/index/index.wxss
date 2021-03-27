@@ -1,0 +1,129 @@
+/* pages/index/index.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color:white;
+}
+/* 发帖框 */
+.postBox{
+  /* border:1rpx solid red; */
+  margin:9rpx 0rpx;
+  position: relative;
+  width: 98%;
+  height: auto;
+  border:1px solid white;
+  background-color: whitesmoke;
+  /* display: flex; */
+  /* justify-content:left; */
+  align-items: center;
+  /* flex-wrap: wrap; */
+  box-sizing: border-box;
+  border-radius:20rpx;
+  box-shadow: 2rpx 2rpx 9rpx rgb(175, 174, 174);
+  /* padding:0rpx 0rpx 0rpx 40rpx ; */
+}
+/* 头像与昵称的banner */
+.seal{
+  /* border-top:1rpx solid rgb(158, 158, 158); */
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  /* background-color: rgb(223, 222, 222); */
+}
+/* 头像框 */
+.userAvatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+}
+/* .userNickName::after{
+  content: "";
+  background-color: rgba(163, 162, 162, 0.267);
+  border:0.6rpx solid rgba(163, 162, 162, 0.267);
+  position: absolute;
+  width:100%;
+  top: 180rpx;
+  left: 0;
+} */
+/* 发表时间 */
+.creatTime_post{
+  font-size: 20rpx;
+  color: cornflowerblue;
+}
+.content{
+  word-wrap: break-word;
+  word-break: break-all;
+  padding:9rpx 5rpx;
+}
+.mainBox{
+  margin-left:25rpx;
+  padding: 10rpx 0px;
+}
+.commentAndlike{
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-around;
+  align-items: center;
+  border-top:1rpx solid rgb(235, 235, 235);
+}
+/* 贴图 */
+.postPic{
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  display: inline-block;
+  /* margin-left: 30rpx; */
+  /* border:1rpx solid red; */
+  padding: 0rpx 0rpx 0rpx 25rpx;
+}
+
+.postPic image{
+ width: 200rpx;
+ height: 200rpx;
+ margin: 6rpx 6rpx;
+}
+.commentAndlike image{
+  width: 50rpx;
+  height: 50rpx;
+}
+/* 评论 */
+.commentBox{
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commentBox image{
+  width: 50rpx;
+  height:50rpx;
+}
+.commentPart{
+  width:600rpx;
+  height: 50rpx;
+  background-color: rgb(236, 236, 236);
+  border-top:1rpx solid rgb(236, 236, 236) ;
+  border-radius: 10rpx;
+  /* box-shadow: -5rpx -5rpx 1rpx 6rpx rgb(189, 188, 188); */
+}
+/*遮罩层 */  
+.shade{
+  width:100%;   
+  height:100%;   
+  top:0;   
+  background:rgba(0,0,0,0.5);  
+  overflow: hidden;   
+  /*要显示在wrap的上面 */   
+  z-index:1;   
+  position: fixed;  
+  }
+  .likedCount{
+    text-align: right;
+    color: tomato;
+    font-size: 25rpx;
+    box-sizing: border-box;
+    padding-right: 150rpx;
+  } 

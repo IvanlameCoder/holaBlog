@@ -1,0 +1,23 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color:whitesmoke;
+}
+.header{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 290rpx;
+  background-color:white ;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+
+.userAvatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+}

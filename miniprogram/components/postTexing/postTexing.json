@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "btnCancel":"../../components/btnCancel/btnCancel"
+  }
+}

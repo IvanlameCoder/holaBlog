@@ -1,0 +1,9 @@
+/* components/btnCancel/btnCancel.wxss */
+.btnCancel{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  right: 9rpx;
+  top:7%;
+  z-index: 5;
+}

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/myPage/myPage"
+  ],
+ 
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./pages/images_Pub/home.png",
+      "selectedIconPath": "./pages/images_Pub/home_show.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "侃音乐",
+      "iconPath": "./pages/images_Pub/music.png",
+      "selectedIconPath": "./pages/images_Pub/music_show.png"
+    }
+    ,
+    {
+      "pagePath": "pages/myPage/myPage",
+      "text": "个人空间",
+      "iconPath": "./pages/images_Pub/myPage.png",
+      "selectedIconPath": "./pages/images_Pub/myPage_show.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "侃影视",
+      "iconPath": "./pages/images_Pub/film.png",
+      "selectedIconPath": "./pages/images_Pub/film_show.png"
+    }
+    ,
+      {
+        "pagePath": "pages/login/login",
+        "text": "侃生活",
+        "iconPath": "./pages/images_Pub/live.png",
+        "selectedIconPath": "./pages/images_Pub/live_show.png"
+      }
+    
+  ]
+  ,"color": "#151501",
+  "selectedColor": "#13227a"
+  }
+  ,
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "一起侃",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

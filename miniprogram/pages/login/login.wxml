@@ -1,0 +1,15 @@
+<!-- 这是登录页 -->
+<view class="container">
+<view class="title">登录 一起侃</view>
+<view class="loginBox">
+  <form action="">
+   <view class="logoBox">
+    <view class="eye_left"></view>
+    <view class="eye_right"></view>
+   </view>
+    <button class="wxBtn_Login" open-type="getUserInfo" bindtap="wxLogin" >微信号一键登录</button>
+    <button class="touristBtn_Login" bindtap="wxTouristLogin">游客登录</button>
+  </form>
+  
+</view>
+</view>

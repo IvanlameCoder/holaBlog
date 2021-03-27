@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "btnPost":"../../components/btnPost/btnPost",
+    "postTexing":"../../components/postTexing/postTexing"
+  }
+}

@@ -1,0 +1,9 @@
+<!--components/btnPost/btnPost.wxml-->
+<!-- <text>components/btnPost/btnPost.wxml</text> -->
+<!-- 发贴子的按钮 -->
+<movable-area class="movable-area">
+    <movable-view class="movable-view" x="650rpx" y="800rpx" inertia="true" out-of-bounds="true" friction="10" damping="11" bindchange="movableArea" direction="all">
+      <image  src="../../pages/images_Pub/post.png"></image>
+    </movable-view>
+  </movable-area>
+  <view class="shade"></view>

@@ -1,0 +1,3 @@
+<!--components/btnCancel/btnCancel.wxml-->
+<!-- <text>components/btnCancel/btnCancel.wxml</text> -->
+<image class="btnCancel" src="../../pages/images_Pub/关闭.png"></image>
